@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/2963c04395.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <div class="container content">
+      <div class="row">
+        <div class="col-10">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-10">
+                <input
+                  type="text"
+                  id="location-input"
+                  class="form-control"
+                  placeholder="Location"
+                  autofocus
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  class="btn btn-outline-primary"
+                  type="submit"
+                  value="🔍"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-2">
+          <button id="current-location" class="btn btn-outline-primary">
+            Current
+          </button>
+        </div>
+      </div>
+      <header>
+        <div class="row">
+          <div class="col-6">
+            <h1 class="city">City</h1>
+            <h4 class="country">Country</h4>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li class="day">Friday</li>
+              <li class="date">May 13</li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <p class="time">14:19</p>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="hight">hight°C</div>
+        <div class="row">
+          <div class="col-2 parameters">
+            <span id="humidity">8</span>% <br />
+            <small>Humidity</small>
+          </div>
+          <div class="col-2 parameters">
+            <span id="wind-speed">3</span>m/s <br />
+            <small>Wind</small>
+          </div>
+          <div class="col-4">
+            <i class="fa-solid fa-sun title-emoji"></i>
+            <div class="description">sunny</div>
+          </div>
+          <div class="col-4">
+            <span class="temperature-today">25</span>
+            <span class="degrees">
+              <a href="#" id="celsius-link"> °C </a>/
+              <a href="#" id="fahrenheit-link"> °F</a>
+            </span>
+            <div class="low">low°C</div>
+          </div>
+        </div>
+      </main>
+      <footer class="future">
+        <div class="row">
+          <div class="col first-box">
+            <div class="card box">
+              <div class="card-body">
+                <h6 class="card-title">SAT</h6>
+                <div class="data-box">May 14</div>
+                <i class="fa-solid fa-sun emoji"></i>
+                <div class="future-temperature">
+                  25°
+                  <span class="low"> 15° </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col second-box">
+            <div class="card box">
+              <div class="card-body">
+                <h6 class="card-title">SUN</h6>
+                <div class="data-box">May 15</div>
+                <i class="fa-solid fa-sun emoji"></i>
+                <div class="future-temperature">
+                  25°
+                  <span class="low"> 15° </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col third-box">
+            <div class="card box">
+              <div class="card-body">
+                <h6 class="card-title">MON</h6>
+                <div class="data-box">May 16</div>
+                <i class="fa-solid fa-cloud-sun emoji"></i>
+                <div class="future-temperature">
+                  25°
+                  <span class="low"> 15° </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col fourth-box">
+            <div class="card box">
+              <div class="card-body">
+                <h6 class="card-title">TUE</h6>
+                <div class="data-box">May 17</div>
+                <i class="fa-solid fa-cloud-sun emoji"></i>
+                <div class="future-temperature">
+                  25°
+                  <span class="low"> 15° </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col fifth-box">
+            <div class="card box">
+              <div class="card-body">
+                <h6 class="card-title">WED</h6>
+                <div class="data-box">May 18</div>
+                <i class="fa-solid fa-sun emoji"></i>
+                <div class="future-temperature">
+                  25°
+                  <span class="low"> 15° </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>
