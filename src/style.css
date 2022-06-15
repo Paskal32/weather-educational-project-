@@ -1,0 +1,107 @@
+main {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 20px;
+  margin: 10px;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+main .hight {
+  text-align: right;
+}
+main .low {
+  text-align: right;
+  position: relative;
+  top: -20px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.time {
+  font-weight: 500;
+}
+.content {
+  background: linear-gradient(
+    89.9deg,
+    rgb(208, 246, 255) 0.1%,
+    rgb(255, 237, 237) 47.9%,
+    rgb(255, 255, 231) 100.2%
+  );
+  max-width: 600px;
+
+  margin: 40px auto;
+  padding: 30px;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.current {
+  background: transparent;
+}
+.parameters {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  height: 50px;
+}
+
+.parameters small {
+  font-weight: 300;
+}
+
+.temperature-today {
+  font-size: 72px;
+  color: #212b30;
+  font-weight: 500;
+  padding: 0;
+}
+.degrees {
+  font-size: 22px;
+  position: relative;
+  top: -50px;
+}
+.title-emoji {
+  display: block;
+  font-size: 78px;
+  color: yellow;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+.box {
+  text-align: center;
+  background: transparent;
+}
+
+.emoji {
+  font-size: 24px;
+  margin: 10px;
+  opacity: 0.7;
+}
+.future-temperature {
+  font-size: 16px;
+  font-weight: 500px;
+}
+.box h6 {
+  margin-bottom: 0;
+}
+
+footer .low {
+  opacity: 0.7;
+}
